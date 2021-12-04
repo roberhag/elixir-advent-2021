@@ -29,7 +29,7 @@ defmodule Submarine do
                 do_aim_commands(tail, pos, depth, aim - number)
         end
     end
-    def do_aim_commands([], pos, depth, aim) do
+    def do_aim_commands([], pos, depth, _aim) do
         {pos, depth}
     end
 end
